@@ -29,9 +29,12 @@ ActiveRecord::Schema.define(version: 20160616191622) do
     t.string   "name"
     t.string   "address"
     t.string   "phone"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
     t.string   "email"
+    t.date     "last_student_added_at"
+    t.date     "hire_date"
+    t.date     "retirement_date"
   end
 
 end
